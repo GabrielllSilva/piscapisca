@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pgtasks:
+    container_name: pg-pisca
+    image: postgres:9.6
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_DB=pisca
+      - POSTGRES_PASSWORD=password
